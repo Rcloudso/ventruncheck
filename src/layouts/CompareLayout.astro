@@ -9,14 +9,18 @@ interface Props {
 }
 
 const { title, description, optionA, optionB } = Astro.props;
-const vs = optionA && optionB ? ` · ${optionA} vs ${optionB}` : '';
+const vs = optionA && optionB ? `${optionA} vs ${optionB}` : 'Side-by-side method types';
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
 ---
 <BaseLayout title={title} description={description} wide>
   <article class="prose">
-    <p class="meta">Compare{vs} · table + when to pick each</p>
+    <span class="type-badge">
+      <img src={`${base}icons/type-compare.svg`} alt="" width="14" height="14" />
+      Compare
+    </span>
     <h1>{title}</h1>
+    <p class="page-purpose">{vs} — when to pick each, and when neither fits.</p>
     {description && <p class="lede">{description}</p>}
     <slot />
     <aside class="disclosure-blurb">

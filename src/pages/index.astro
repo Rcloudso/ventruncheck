@@ -7,35 +7,103 @@ const compares = await getCollection('compare');
 const checklists = await getCollection('checklist');
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+
+const cards = [
+  ...guides.map((entry) => ({
+    type: 'Guide' as const,
+    pillClass: 'guide',
+    href: `${base}guides/${entry.slug}`,
+    title: entry.data.title,
+    description: entry.data.description,
+    accent: `${base}icons/duct-cross-section.svg`,
+  })),
+  ...compares.map((entry) => ({
+    type: 'Compare' as const,
+    pillClass: 'compare',
+    href: `${base}compare/${entry.slug}`,
+    title: entry.data.title,
+    description: entry.data.description,
+    accent: `${base}icons/brush.svg`,
+  })),
+  ...checklists.map((entry) => ({
+    type: 'Checklist' as const,
+    pillClass: 'checklist',
+    href: `${base}checklist/${entry.slug}`,
+    title: entry.data.title,
+    description: entry.data.description,
+    accent: `${base}icons/vent-cap.svg`,
+  })),
+];
 ---
 <BaseLayout
   title="VentRunCheck — Dryer vent cleaning guides"
   description="Practical dryer vent cleaning guidance for homeowners: DIY vs pro, tool comparisons, and safety checklists."
+  wide
 >
-  <h1>Dryer vent cleaning, without the hype</h1>
-  <p class="lede">
-    VentRunCheck is a small static directory for one niche: dryer vents that do not move air.
-    Clothes take forever to dry, lint builds up, and quotes sometimes only clean the first few feet.
-    We focus on decisions, tool <em>types</em>, and stop conditions — not hard-sell brand rankings.
-  </p>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="hero-brand">VentRunCheck</p>
+      <h1 id="hero-title">Dryer vent decisions, without the hype</h1>
+      <p class="lede">
+        A small directory for one niche: dryer vents that do not move air.
+        Symptom checks, DIY vs pro, tool <em>types</em>, and stop conditions —
+        not hard-sell brand rankings.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href={`${base}guides/signs-clogged-dryer-vent`}>
+          Check clogged signs
+        </a>
+        <a class="btn btn-secondary" href={`${base}guides/diy-vs-pro-dryer-vent-cleaning`}>
+          DIY or hire a pro?
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <img src={`${base}icons/duct-cross-section.svg`} alt="" width="180" height="180" />
+    </div>
+  </section>
 
+  <p class="section-label">Start by type</p>
+  <ul class="type-entries">
+    <li class="type-entry">
+      <a href={`${base}guides/signs-clogged-dryer-vent`}>
+        <div class="type-entry-icon">
+          <img src={`${base}icons/type-guide.svg`} alt="" width="24" height="24" />
+        </div>
+        <h2>Guide</h2>
+        <p>Symptom → decision → next action. Read when something feels off.</p>
+      </a>
+    </li>
+    <li class="type-entry">
+      <a href={`${base}compare/brush-kit-vs-leaf-blower`}>
+        <div class="type-entry-icon">
+          <img src={`${base}icons/type-compare.svg`} alt="" width="24" height="24" />
+        </div>
+        <h2>Compare</h2>
+        <p>Method types side by side — when each wins, and when to skip.</p>
+      </a>
+    </li>
+    <li class="type-entry">
+      <a href={`${base}checklist/before-you-run-the-dryer-again`}>
+        <div class="type-entry-icon">
+          <img src={`${base}icons/type-checklist.svg`} alt="" width="24" height="24" />
+        </div>
+        <h2>Checklist</h2>
+        <p>Printable-style steps and red-flag stops before you run heat again.</p>
+      </a>
+    </li>
+  </ul>
+
+  <p class="section-label">All pages</p>
   <ul class="card-list">
-    {guides.map((entry) => (
+    {cards.map((card) => (
       <li class="card">
-        <h2><a href={`${base}guides/${entry.slug}`}>{entry.data.title}</a></h2>
-        <p>{entry.data.description}</p>
-      </li>
-    ))}
-    {compares.map((entry) => (
-      <li class="card">
-        <h2><a href={`${base}compare/${entry.slug}`}>{entry.data.title}</a></h2>
-        <p>{entry.data.description}</p>
-      </li>
-    ))}
-    {checklists.map((entry) => (
-      <li class="card">
-        <h2><a href={`${base}checklist/${entry.slug}`}>{entry.data.title}</a></h2>
-        <p>{entry.data.description}</p>
+        <span class={`card-pill ${card.pillClass}`}>{card.type}</span>
+        <h2><a href={card.href}>{card.title}</a></h2>
+        <p>{card.description}</p>
+        <span class="card-accent" aria-hidden="true">
+          <img src={card.accent} alt="" width="32" height="32" />
+        </span>
       </li>
     ))}
   </ul>
