@@ -1,0 +1,26 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+---
+<BaseLayout title={title} description={description}>
+  <article class="prose">
+    <p class="meta">Guide · Problem → Decision → Table → Types → Checklist</p>
+    <h1>{title}</h1>
+    {description && <p class="lede">{description}</p>}
+    <slot />
+    <aside class="disclosure-blurb">
+      <strong>Affiliate disclosure:</strong> Some links on this site may be affiliate links with
+      <code>?ref=PENDING</code> placeholders until IDs are approved. If you buy through a live link later,
+      we may earn a commission at no extra cost to you. See the
+      <a href={`${base}disclosure`}>full disclosure</a>.
+    </aside>
+  </article>
+</BaseLayout>

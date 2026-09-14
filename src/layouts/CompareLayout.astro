@@ -1,0 +1,27 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  optionA?: string;
+  optionB?: string;
+}
+
+const { title, description, optionA, optionB } = Astro.props;
+const vs = optionA && optionB ? ` · ${optionA} vs ${optionB}` : '';
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+---
+<BaseLayout title={title} description={description} wide>
+  <article class="prose">
+    <p class="meta">Compare{vs} · table + when to pick each</p>
+    <h1>{title}</h1>
+    {description && <p class="lede">{description}</p>}
+    <slot />
+    <aside class="disclosure-blurb">
+      Product links use <code>?ref=PENDING</code> placeholders only. See
+      <a href={`${base}disclosure`}>affiliate disclosure</a>.
+    </aside>
+  </article>
+</BaseLayout>

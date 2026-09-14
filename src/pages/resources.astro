@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+---
+<BaseLayout
+  title="Resources"
+  description="Product and service types for dryer vent cleaning — affiliate IDs pending."
+>
+  <h1>Resources</h1>
+  <p class="lede">
+    Stub list of useful <strong>types</strong>. Links use <code>?ref=PENDING</code> only — no real
+    affiliate IDs until approved.
+  </p>
+
+  <ul>
+    <li id="brush-kits">
+      <strong>Drill brush kits</strong> (4" nylon brushes + flexible rods) —
+      <a href={`${base}resources?ref=PENDING#brush-kits`}>placeholder link</a>
+    </li>
+    <li id="transition-duct">
+      <strong>Rigid / semi-rigid metal transition duct</strong> —
+      <a href={`${base}resources?ref=PENDING#transition-duct`}>placeholder link</a>
+    </li>
+    <li id="vacuum-adapters">
+      <strong>Shop-vac hose adapters</strong> for dryer outlets —
+      <a href={`${base}resources?ref=PENDING#vacuum-adapters`}>placeholder link</a>
+    </li>
+    <li id="pro-service">
+      <strong>Pro full-run cleaning</strong> (dryer to outdoor termination) —
+      <a href={`${base}resources?ref=PENDING#pro-service`}>placeholder link</a>
+    </li>
+  </ul>
+
+  <p>
+    See also the <a href={`${base}guides/diy-vs-pro-dryer-vent-cleaning`}>DIY vs pro guide</a> and
+    <a href={`${base}disclosure`}>affiliate disclosure</a>.
+  </p>
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  wide?: boolean;
+}
+
+const {
+  title,
+  description = 'Practical dryer vent cleaning guidance: DIY vs pro, tool comparisons, and safety checklists.',
+  wide = false,
+} = Astro.props;
+
+const fullTitle = title.includes('VentRunCheck') ? title : `${title} | VentRunCheck`;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : rawBase + '/';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={base}>VentRunCheck</a>
+        <nav class="nav" aria-label="Primary">
+          <a href={`${base}guides/diy-vs-pro-dryer-vent-cleaning`}>Guides</a>
+          <a href={`${base}compare/brush-kit-vs-leaf-blower`}>Compare</a>
+          <a href={`${base}checklist/before-you-run-the-dryer-again`}>Checklist</a>
+          <a href={`${base}resources`}>Resources</a>
+          <a href={`${base}about`}>About</a>
+          <a href={`${base}disclosure`}>Disclosure</a>
+        </nav>
+      </div>
+    </header>
+    <main class={wide ? 'wide' : undefined}>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>VentRunCheck — practical dryer vent decisions for homeowners.</p>
+        <p><a href={`${base}disclosure`}>Affiliate disclosure</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
