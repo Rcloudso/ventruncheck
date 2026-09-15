@@ -93,6 +93,6 @@ The DIY vs Pro guide **is** the first Guide draft.
 - New Guide: src/content/guides/dont-replace-dryer-check-vent-first.mdx
   Built: /guides/dont-replace-dryer-check-vent-first/ (dist/guides/dont-replace-dryer-check-vent-first/index.html)
 - Build exit code: 0 (14 pages)
-- Pushed: (pending)
+- Pushed: origin main `e395230` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/guides/dont-replace-dryer-check-vent-first/
 - Income: **0**
