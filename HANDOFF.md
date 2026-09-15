@@ -78,3 +78,21 @@ The DIY vs Pro guide **is** the first Guide draft.
 - Build exit code: 0 (12 pages)
 - Income: **0**
 - Not deployed
+
+## Nightly 2026-09-14
+
+- New Checklist: src/content/checklist/behind-the-dryer-inspection.mdx
+  Built: /checklist/behind-the-dryer-inspection/ (dist/checklist/behind-the-dryer-inspection/index.html)
+- Build exit code: 0 (13 pages)
+- Pushed: origin main `5e1d919` (GitHub Pages via Actions)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/checklist/behind-the-dryer-inspection/
+- Income: **0**
+
+## Nightly 2026-09-15
+
+- New Guide: src/content/guides/dont-replace-dryer-check-vent-first.mdx
+  Built: /guides/dont-replace-dryer-check-vent-first/ (dist/guides/dont-replace-dryer-check-vent-first/index.html)
+- Build exit code: 0 (14 pages)
+- Pushed: (pending)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/guides/dont-replace-dryer-check-vent-first/
+- Income: **0**
