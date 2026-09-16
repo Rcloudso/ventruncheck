@@ -102,6 +102,6 @@ The DIY vs Pro guide **is** the first Guide draft.
 - New Compare: src/content/compare/lint-screen-vs-full-vent-cleaning.mdx
   Built: /compare/lint-screen-vs-full-vent-cleaning/ (dist/compare/lint-screen-vs-full-vent-cleaning/index.html)
 - Build exit code: 0 (15 pages)
-- Pushed: origin main (pending this commit)
+- Pushed: origin main `2954b04` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/compare/lint-screen-vs-full-vent-cleaning/
 - Income: **0**
