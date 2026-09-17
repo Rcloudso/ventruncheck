@@ -105,3 +105,12 @@ The DIY vs Pro guide **is** the first Guide draft.
 - Pushed: origin main `2954b04` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/compare/lint-screen-vs-full-vent-cleaning/
 - Income: **0**
+
+## Nightly 2026-09-17
+
+- New Checklist: src/content/checklist/slow-drying-clothes-checklist.mdx
+  Built: /checklist/slow-drying-clothes-checklist/ (dist/checklist/slow-drying-clothes-checklist/index.html)
+- Build exit code: 0 (16 pages)
+- Pushed: origin main (pending hash after push)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/checklist/slow-drying-clothes-checklist/
+- Income: **0**
