@@ -120,6 +120,6 @@ The DIY vs Pro guide **is** the first Guide draft.
 - New Guide: src/content/guides/burning-smell-from-dryer.mdx
   Built: /guides/burning-smell-from-dryer/ (dist/guides/burning-smell-from-dryer/index.html)
 - Build exit code: 0 (17 pages)
-- Pushed: origin main (pending hash)
+- Pushed: origin main `673c67a` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/guides/burning-smell-from-dryer/
 - Income: **0**
