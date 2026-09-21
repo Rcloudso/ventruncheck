@@ -129,6 +129,6 @@ The DIY vs Pro guide **is** the first Guide draft.
 - New Compare: src/content/compare/wall-vs-roof-dryer-vent-termination.mdx
   Built: /compare/wall-vs-roof-dryer-vent-termination/ (dist/compare/wall-vs-roof-dryer-vent-termination/index.html)
 - Build exit code: 0 (18 pages)
-- Pushed: origin main (pending commit hash)
+- Pushed: origin main `4ed28e9` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/compare/wall-vs-roof-dryer-vent-termination/
 - Income: **0**
