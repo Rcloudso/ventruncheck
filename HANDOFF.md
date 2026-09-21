@@ -123,3 +123,12 @@ The DIY vs Pro guide **is** the first Guide draft.
 - Pushed: origin main `673c67a` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/guides/burning-smell-from-dryer/
 - Income: **0**
+
+## Nightly 2026-09-21
+
+- New Compare: src/content/compare/wall-vs-roof-dryer-vent-termination.mdx
+  Built: /compare/wall-vs-roof-dryer-vent-termination/ (dist/compare/wall-vs-roof-dryer-vent-termination/index.html)
+- Build exit code: 0 (18 pages)
+- Pushed: origin main (pending commit hash)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/compare/wall-vs-roof-dryer-vent-termination/
+- Income: **0**
