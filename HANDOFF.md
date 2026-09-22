@@ -138,6 +138,6 @@ The DIY vs Pro guide **is** the first Guide draft.
 - New Checklist: src/content/checklist/dryer-vent-cleaning-prep.mdx
   Built: /checklist/dryer-vent-cleaning-prep/ (dist/checklist/dryer-vent-cleaning-prep/index.html)
 - Build exit code: 0 (19 pages)
-- Pushed: origin main (pending commit hash)
+- Pushed: origin main `2b9d613` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/checklist/dryer-vent-cleaning-prep/
 - Income: **0**
