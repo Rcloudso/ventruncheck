@@ -132,3 +132,12 @@ The DIY vs Pro guide **is** the first Guide draft.
 - Pushed: origin main `4ed28e9` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/compare/wall-vs-roof-dryer-vent-termination/
 - Income: **0**
+
+## Nightly 2026-09-22
+
+- New Checklist: src/content/checklist/dryer-vent-cleaning-prep.mdx
+  Built: /checklist/dryer-vent-cleaning-prep/ (dist/checklist/dryer-vent-cleaning-prep/index.html)
+- Build exit code: 0 (19 pages)
+- Pushed: origin main (pending commit hash)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/checklist/dryer-vent-cleaning-prep/
+- Income: **0**
