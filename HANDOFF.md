@@ -141,3 +141,12 @@ The DIY vs Pro guide **is** the first Guide draft.
 - Pushed: origin main `2b9d613` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/checklist/dryer-vent-cleaning-prep/
 - Income: **0**
+
+## Nightly 2026-09-23
+
+- New Guide: src/content/guides/when-dryer-vent-run-is-too-long.mdx
+  Built: /guides/when-dryer-vent-run-is-too-long/ (dist/guides/when-dryer-vent-run-is-too-long/index.html)
+- Build exit code: 0 (20 pages)
+- Pushed: origin main `d1297c2` (GitHub Pages via Actions)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/guides/when-dryer-vent-run-is-too-long/
+- Income: **0**
