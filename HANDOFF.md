@@ -150,3 +150,12 @@ The DIY vs Pro guide **is** the first Guide draft.
 - Pushed: origin main `d1297c2` (GitHub Pages via Actions)
 - Live URL (after Pages): https://rcloudso.github.io/ventruncheck/guides/when-dryer-vent-run-is-too-long/
 - Income: **0**
+
+## Nightly 2026-09-24
+
+- New Compare: src/content/compare/periscope-vs-flexible-metal-transition.mdx
+  Built: /compare/periscope-vs-flexible-metal-transition/ (dist/compare/periscope-vs-flexible-metal-transition/index.html)
+- Build exit code: 0 (21 pages)
+- Pushed: origin main (pending hash)
+- Live URL (after Pages): https://rcloudso.github.io/ventruncheck/compare/periscope-vs-flexible-metal-transition/
+- Income: **0**
